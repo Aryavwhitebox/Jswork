@@ -1,0 +1,5 @@
+typee
+
+program stack:
+
+garbage collector heap:
