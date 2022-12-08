@@ -1,0 +1,112 @@
+// let a=[1,2,3,4,5]
+// //push Appends new elements to the end of an
+// // array, and returns the new length of the array.
+// a.push(6)
+// console.log(a);
+
+// a.pop()
+// //pop removes the last element from an array
+// console.log(a);
+
+// a.shift()
+// //shift method is used to remove the first element
+// //from the array
+// console.log('shift method '+a);
+// a.unshift(1)
+// console.log('unshift method '+a);
+
+// a.splice(4,2)
+// //splice is used for deleting
+// //it has index as first parameter and
+// //number of deletions as the 2nd parameter
+// console.log('splice '+a);
+// //we can use splice method to update the array as well
+// //march to March
+// let b=['jan','feb','march','april']
+// console.log(b);
+
+// b.splice(2,1,'March')
+// console.log(b); 
+
+
+
+// console.log(b.indexOf('March'));
+
+// console.log(b.includes('april'));
+
+
+// //map method
+
+
+// let m=[1,2,3,4,5]
+
+// let m2=m.map((hey)=>{
+// return hey*2
+// })
+
+// console.log(m2);
+
+// //it also accepts three parameters such as variable , index and array 
+// //which we will see in the below example
+
+// // let map1=[1,2,3,4,5]
+// // let map2=map1.map(
+// // (hello,ind,arr)=>{
+
+// //     return ` this is the variable mul ${map1*2} and indexes are ${ind} also array is ${arr}`
+// // }
+
+// // )
+
+// // console.log(map2);
+
+
+// //to check the square root of elements in an array
+
+// let sqr=[4,9,16,25]
+
+// // let sqr2=sqr.map((vb)=>{
+// //     return Math.sqrt(vb)
+
+// // })
+
+// //we can also write the above code without return type and {}
+// let sqr2=sqr.map((vb)=>
+//      Math.sqrt(vb)
+
+// )
+
+
+
+// console.log(sqr2);
+
+
+
+// ///Filter method in arrays
+// //problem multiply the given elements in an array with 2 and return only elements
+// //greater than 10
+
+// let ar=[1,2,15,20,25]
+
+// let ar2=ar.map((curEl)=>{
+//      return curEl*2
+// }).filter((curEl)=>{
+//      return curEl>10
+// })
+// console.log(ar2);
+
+
+//reduce method returns single value of the given array inputs
+//it has accumulator
+//currentelement
+//array index or source array
+
+let a=[1,2,3,4,5]
+
+let a2=a.reduce((accumulator,currEle,index)=>{
+return accumulator+=currEle
+
+})
+console.log(a2);
+
+
